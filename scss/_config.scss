@@ -1,11 +1,12 @@
 // Variables
 
 $website-width: 1280px;
-$main-color: #ffbc00;
+$main-color: #4caf50;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
-$bg-image: url('../img/showcase.jpg');
+// $bg-image: url('../img/showcase.jpg');
+$bg-image: url('../img/pexels-photo-2308037.jpeg');
 
 // Set Text Color
 @function set-text-color($color) {

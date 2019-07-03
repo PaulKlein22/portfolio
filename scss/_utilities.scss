@@ -102,24 +102,25 @@
   &-main {
     @extend %btn-shared;
     color: #333;
-    background-color: $main-color;
+    background: $main-color;
   }
 
   &-light {
     @extend %btn-shared;
-    color: #333;
-    background-color: $light-color;
+    color: #fff;
+    background: transparent;
   }
 
   &-dark {
     @extend %btn-shared;
     color: #f4f4f4;
-    background-color: $dark-color;
+    background: $dark-color;
   }
 }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-  background-color: $main-color;
+  background: $light-color;
+  color: set-text-color($light-color);
 }
