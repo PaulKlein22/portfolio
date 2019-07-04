@@ -46,7 +46,7 @@
 
     <!-- Section A: Gallery -->
     <section id="work-a" class="text-center py-3">
-      <div class="container">
+      <div class="work-gallery container">
         <h2 class="section-title">My Work</h2>
         <div class="bottom-line"></div>
         <p class="lead">Check out some of my projects...</p>
@@ -56,10 +56,40 @@
         >
           <div class="card">
             <div class="front">
-              <h1>Hello</h1>
+              <a href="#">
+                <img
+                  src="../dist/img/vegetabelly.jpg"
+                  alt="Project"
+                  class="card-img"
+                />
+              </a>
+              <ul class="tech-stack text-center">
+                <li>React | Redux</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Express | Node.js</li>
+                <li>MongoDB | Mongoose</li>
+              </ul>
             </div>
             <div class="back">
-              <h1>Goodbye</h1>
+              <p class="lead py-3">
+                Vegetabelly is a social local-search service for vegetarian and
+                vegan restaurants.
+              </p>
+              <a
+                href="https://vegetabelly.herokuapp.com/"
+                target="_blank"
+                class="btn-light"
+              >
+                <i class="fas fa-eye"></i> View Site
+              </a>
+              <a
+                href="https://github.com/paulklein22/vegetabelly"
+                target="_blank"
+                class="btn-light"
+              >
+                <i class="fab fa-github"></i> View Code
+              </a>
             </div>
           </div>
         </div>
@@ -71,9 +101,15 @@
       <div class="footer-content container">
         <p>Copyright &copy; 2019. All Rights Reserved</p>
         <div class="social">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-linkedin"></i>
+          <a href="https://twitter.com/paul_klein22" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://github.com/paulklein22" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/paulklein22/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </div>
       </div>
     </footer>

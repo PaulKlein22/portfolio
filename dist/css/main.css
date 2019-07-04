@@ -28,9 +28,12 @@
 .py-4 {
   padding: 4rem 0; }
 
+.px-1 {
+  padding: 0 1rem; }
+
 .bg-main {
-  background: #4caf50;
-  color: #fff; }
+  background: #ffeb3b;
+  color: #111; }
 
 .bg-dark {
   background: #333;
@@ -75,7 +78,7 @@
 
 .btn-main {
   color: #333;
-  background: #4caf50; }
+  background: #ffeb3b; }
 
 .btn-light {
   color: #fff;
@@ -98,7 +101,7 @@ input[class^='btn-']:hover {
 
 .item {
   position: relative;
-  background: #4caf50;
+  background: #ffeb3b;
   overflow: hidden; }
   .item::after {
     content: '';
@@ -239,12 +242,14 @@ img {
 
 #header-inner {
   height: 5.5rem;
-  border-bottom: 3px solid #ffeb3b;
-  background: url("../img/showcase.jpeg") no-repeat 20% 30%/cover; }
+  background: url("../img/showcase.jpeg") no-repeat center 12.1%/cover;
+  border-bottom: 3px solid #ffeb3b; }
+
+.work-gallery {
+  height: 550px; }
 
 .card-container {
-  perspective: 500px;
-  height: 100%; }
+  perspective: 500px; }
 
 .card-container:hover .card,
 .card-container.hover .card {
@@ -261,19 +266,33 @@ img {
   height: 333px;
   width: 238px;
   margin: 20px;
-  background: #5677fd;
-  color: #fff;
-  border-radius: 7px;
+  border: 4px solid #222;
+  border-radius: 6px;
   text-align: center;
-  line-height: 333px;
+  line-height: 1.2rem;
   transition: 0.6s;
   transform-style: preserve-3d; }
 
 .front {
+  background: #373b44;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #4286f4, #373b44);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #4286f4, #373b44);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
   z-index: 2;
   transform: rotateY(0deg); }
 
 .back {
+  background: #373b44;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #4286f4, #373b44);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #4286f4, #373b44);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  line-height: 1.8rem;
   transform: rotateY(180deg); }
 
 .front,
@@ -282,6 +301,13 @@ img {
   top: 0;
   left: 0;
   backface-visibility: hidden; }
+
+.card-img {
+  border-bottom: 2px solid #ffeb3b; }
+
+.tech-stack {
+  padding-top: 1rem;
+  line-height: 1.4rem; }
 
 #contact-a .text-fields {
   display: grid;
@@ -339,8 +365,8 @@ img {
       text-align: center;
       line-height: 20px; }
       #main-footer .footer-content .social .fab:hover {
-        background: #4caf50;
-        color: #fff; }
+        background: #ffeb3b;
+        color: #111; }
     #main-footer .footer-content .social .fa-twitter {
       color: #38a1f3; }
     #main-footer .footer-content .social .fa-github {
@@ -362,7 +388,7 @@ img {
       padding: 1rem; }
   #header-home {
     height: 10rem;
-    border-bottom: 3px solid #4caf50;
+    border-bottom: 3px solid #ffeb3b;
     background-position: 20% 30%; }
     #header-home .header-content {
       display: none; }
