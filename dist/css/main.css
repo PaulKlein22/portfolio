@@ -356,7 +356,7 @@ img {
     padding: 0.5rem 1rem; }
 
 #contact-a .grecaptcha-badge {
-  margin: auto !important; }
+  margin-left: 50% !important; }
 
 #contact-a button[type='submit'] {
   width: 50%; }
