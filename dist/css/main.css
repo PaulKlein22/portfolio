@@ -355,8 +355,8 @@ img {
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
 
-#contact-a .g-recaptcha {
-  margin: 10px auto !important; }
+#contact-a .grecaptcha-badge {
+  margin: auto !important; }
 
 #contact-a button[type='submit'] {
   width: 50%; }
