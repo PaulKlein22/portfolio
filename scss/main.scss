@@ -276,8 +276,16 @@ img {
     //   margin: 10px auto !important;
     // }
 
-    .grecaptcha-badge {
-      margin-left: 50% !important;
+    // .grecaptcha-badge {
+    //   margin-left: 50% !important;
+    // }
+
+    .recaptcha {
+      text-align: center;
+    }
+
+    .g-recaptcha {
+      display: inline-block;
     }
 
     button[type='submit'] {
