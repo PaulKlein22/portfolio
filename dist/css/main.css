@@ -57,7 +57,7 @@
   height: 2px;
   width: 3rem;
   margin: 0 auto 1rem auto;
-  background: #4caf50; }
+  background: #ffeb3b; }
 
 .lead {
   margin-bottom: 2rem;
@@ -188,12 +188,6 @@ h4 {
 img {
   width: 100%; }
 
-#logo {
-  width: 70px;
-  height: 70px;
-  color: #fff;
-  text-transform: uppercase; }
-
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -202,6 +196,22 @@ img {
     display: flex; }
   #main-nav li {
     padding: 1rem 1.5rem; }
+    #main-nav li.social .fab {
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      line-height: 20px;
+      transition: transform 0.5s ease; }
+      #main-nav li.social .fab:hover {
+        transform: scale(1.8); }
+      #main-nav li.social .fab.fa-twitter {
+        color: #38a1f3; }
+      #main-nav li.social .fab.fa-github {
+        color: #000; }
+      #main-nav li.social .fab.fa-linkedin {
+        color: #0077b5; }
+    #main-nav li.social a {
+      border: none; }
   #main-nav a {
     padding-bottom: 0.5rem;
     border-bottom: 3px transparent solid;
@@ -210,155 +220,68 @@ img {
     text-decoration: none;
     transition: border-color 0.5s; }
     #main-nav a:hover {
-      border-color: #4caf50; }
+      border-color: #ffeb3b; }
     #main-nav a.current {
-      border-color: #4caf50; }
+      border-color: #f4f4f4; }
 
 #header-home {
   height: 100vh;
-  background: url("../img/pexels-photo-2308037.jpeg") no-repeat center center/cover;
+  background: url("../img/showcase.jpeg") no-repeat center center/cover;
   color: #fff; }
   #header-home .header-content {
     padding-top: 20%;
     text-align: center; }
     #header-home .header-content h1 {
+      margin-bottom: 44px;
       font-size: 4rem;
-      line-height: 1.2; }
+      line-height: 1.2;
+      text-shadow: 1.5px 1.5px 2px #ffeb3b, 0 0 1em #29b6f6, 0 0 0.2em #29b6f6; }
 
 #header-inner {
   height: 5.5rem;
-  border-bottom: 3px solid #4caf50;
-  background: url("../img/pexels-photo-2308037.jpeg") no-repeat 20% 30%/cover; }
+  border-bottom: 3px solid #ffeb3b;
+  background: url("../img/showcase.jpeg") no-repeat 20% 30%/cover; }
 
-#home-a .specials {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 3rem; }
-  #home-a .specials .fas {
-    padding-bottom: 0.4rem;
-    color: #4caf50; }
+.card-container {
+  perspective: 500px;
+  height: 100%; }
 
-#home-b .stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); }
-  #home-b .stats li {
-    line-height: 2; }
-    #home-b .stats li.stats-title {
-      font-size: 1.5rem; }
-    #home-b .stats li.stats-number {
-      font-size: 2rem;
-      font-weight: bold; }
-  #home-b .stats div {
-    padding: 3rem 0; }
-    #home-b .stats div:nth-child(odd) {
-      background: #f4f4f4; }
-    #home-b .stats div:nth-child(even) {
-      background: #ccc; }
+.card-container:hover .card,
+.card-container.hover .card {
+  transform: rotateY(180deg); }
 
-#home-c .process {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  text-align: center; }
-  #home-c .process-step {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 15px;
-    width: 15px;
-    padding: 1rem;
-    border-radius: 50%;
-    line-height: 15px;
-    font-size: 28px;
-    background: #4caf50;
-    color: #fff;
-    transition: all 1s; }
-  #home-c .process-icon {
-    position: relative;
-    height: 70px;
-    width: 70px;
-    padding: 2rem;
-    border-radius: 50%;
-    line-height: 70px;
-    background: #333;
-    color: #fff;
-    text-align: center;
-    transition: all 1s; }
-    #home-c .process-icon:hover {
-      background: #4caf50;
-      height: 90px;
-      width: 90px;
-      line-height: 90px; }
-      #home-c .process-icon:hover .process-step {
-        background: #333;
-        color: #fff; }
+.card-container,
+.front,
+.back {
+  width: 238px;
+  height: 333px; }
 
-#about-a .about-info {
-  display: grid;
-  grid-template-areas: 'bioimg   bio     bio' 'award1   award2  award3';
-  grid-gap: 1.2rem; }
+.card {
+  position: relative;
+  height: 333px;
+  width: 238px;
+  margin: 20px;
+  background: #5677fd;
+  color: #fff;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 333px;
+  transition: 0.6s;
+  transform-style: preserve-3d; }
 
-#about-a .bio-img {
-  grid-area: bioimg; }
+.front {
+  z-index: 2;
+  transform: rotateY(0deg); }
 
-#about-a .bio {
-  grid-area: bio;
-  padding: 0.8rem;
-  border-left: 3px solid #4caf50; }
+.back {
+  transform: rotateY(180deg); }
 
-#about-a .award-1 {
-  grid-area: award1; }
-
-#about-a .award-2 {
-  grid-area: award2; }
-
-#about-a .award-3 {
-  grid-area: award3; }
-
-#about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
-  margin: 1rem;
-  color: #4caf50; }
-
-#about-b .progress {
-  height: 20px;
-  margin-bottom: 0.3rem;
-  background: #ccc;
-  border-radius: 5px;
-  overflow: hidden; }
-  #about-b .progress div {
-    height: 100%;
-    background: #4caf50;
-    color: #fff;
-    text-align: center; }
-
-#about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
-  #about-c .about-logos img {
-    width: 70%; }
-
-#about-d .testimonials {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem; }
-  #about-d .testimonials ul {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    list-style: none; }
-  #about-d .testimonials p {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px; }
-  #about-d .testimonials img {
-    height: 50px;
-    width: 50px;
-    margin-right: 0.5rem;
-    border-radius: 50%; }
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden; }
 
 #contact-a .text-fields {
   display: grid;
@@ -385,7 +308,13 @@ img {
 #contact-b .contact-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ffeb3b;
   text-align: center; }
+  #contact-b .contact-info h3 {
+    color: #fff59d; }
+  #contact-b .contact-info i {
+    color: #fff59d; }
 
 #contact-c h1 {
   font-size: 4rem;

@@ -33,14 +33,6 @@ img {
   width: 100%;
 }
 
-// Logo
-#logo {
-  width: 70px;
-  height: 70px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
 // Main Nav
 #main-nav {
   display: flex;
@@ -53,6 +45,32 @@ img {
 
   li {
     padding: 1rem 1.5rem;
+
+    &.social .fab {
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      line-height: 20px;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(1.8);
+      }
+
+      &.fa-twitter {
+        color: #38a1f3;
+      }
+      &.fa-github {
+        color: #000;
+      }
+      &.fa-linkedin {
+        color: #0077b5;
+      }
+    }
+
+    &.social a {
+      border: none;
+    }
   }
 
   a {
@@ -64,11 +82,11 @@ img {
     transition: border-color 0.5s;
 
     &:hover {
-      border-color: $main-color;
+      border-color: $yellow-color;
     }
 
     &.current {
-      border-color: $main-color;
+      border-color: $light-color;
     }
   }
 }
@@ -78,7 +96,6 @@ img {
   &-home {
     height: 100vh;
     background: $bg-image no-repeat center center / cover;
-    // background-size: contain;
     color: #fff;
 
     .header-content {
@@ -86,215 +103,74 @@ img {
       text-align: center;
 
       h1 {
+        margin-bottom: 44px;
         font-size: 4rem;
         line-height: 1.2;
+        text-shadow: 1.5px 1.5px 2px $yellow-color, 0 0 1em #29b6f6,
+          0 0 0.2em #29b6f6;
       }
     }
   }
 
   &-inner {
     height: 5.5rem;
-    border-bottom: 3px solid $main-color;
+    border-bottom: 3px solid $yellow-color;
     background: $bg-image no-repeat 20% 30% / cover;
   }
 }
 
 // Home Sections
-#home {
-  &-a {
-    .specials {
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-columns: repeat(4, 1fr);
-      margin-top: 3rem;
-
-      .fas {
-        padding-bottom: 0.4rem;
-        color: $main-color;
-      }
-    }
-  }
-
-  &-b {
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-
-      li {
-        line-height: 2;
-
-        &.stats-title {
-          font-size: 1.5rem;
-        }
-
-        &.stats-number {
-          font-size: 2rem;
-          font-weight: bold;
-        }
-      }
-
-      div {
-        padding: 3rem 0;
-
-        &:nth-child(odd) {
-          background: $light-color;
-        }
-
-        &:nth-child(even) {
-          background: $medium-color;
-        }
-      }
-    }
-  }
-
-  &-c {
-    .process {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1.5rem;
-      text-align: center;
-
-      &-step {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 15px;
-        width: 15px;
-        padding: 1rem;
-        border-radius: 50%;
-        line-height: 15px;
-        font-size: 28px;
-        background: $main-color;
-        color: set-text-color($main-color);
-        transition: all 1s;
-      }
-
-      &-icon {
-        position: relative;
-        height: 70px;
-        width: 70px;
-        padding: 2rem;
-        border-radius: 50%;
-        line-height: 70px;
-        background: $dark-color;
-        color: set-text-color($dark-color);
-        text-align: center;
-        transition: all 1s;
-
-        &:hover {
-          background: $main-color;
-          height: 90px;
-          width: 90px;
-          line-height: 90px;
-
-          .process-step {
-            background: $dark-color;
-            color: set-text-color($dark-color);
-          }
-        }
-      }
-    }
-  }
-}
 
 // About Sections
-#about {
-  &-a {
-    .about-info {
-      display: grid;
-      grid-template-areas:
-        'bioimg   bio     bio'
-        'award1   award2  award3';
-      grid-gap: 1.2rem;
-    }
 
-    // Grid Area
-    .bio-img {
-      grid-area: bioimg;
-    }
+// Work Sections
 
-    .bio {
-      grid-area: bio;
-      padding: 0.8rem;
-      border-left: 3px solid $main-color;
-    }
+.card-container {
+  perspective: 500px;
+  height: 100%;
+}
 
-    .award-1 {
-      grid-area: award1;
-    }
+.card-container:hover .card,
+.card-container.hover .card {
+  transform: rotateY(180deg);
+}
 
-    .award-2 {
-      grid-area: award2;
-    }
+.card-container,
+.front,
+.back {
+  width: 238px;
+  height: 333px;
+}
 
-    .award-3 {
-      grid-area: award3;
-    }
+.card {
+  position: relative;
+  height: 333px;
+  width: 238px;
+  margin: 20px;
+  background: #5677fd;
+  color: #fff;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 333px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
 
-    .award-1 .fas,
-    .award-2 .fas,
-    .award-3 .fas {
-      margin: 1rem;
-      color: $main-color;
-    }
-  }
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
 
-  &-b {
-    .progress {
-      height: 20px;
-      margin-bottom: 0.3rem;
-      background: $medium-color;
-      border-radius: 5px;
-      overflow: hidden;
+.back {
+  transform: rotateY(180deg);
+}
 
-      div {
-        height: 100%;
-        background: $main-color;
-        color: #fff;
-        text-align: center;
-      }
-    }
-  }
-
-  &-c {
-    .about-logos {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-
-      img {
-        width: 70%;
-      }
-    }
-  }
-
-  &-d {
-    .testimonials {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 0.5rem;
-
-      ul {
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;
-        list-style: none;
-      }
-
-      p {
-        padding: 0.5rem;
-        border: 1px solid $medium-color;
-        border-radius: 5px;
-      }
-
-      img {
-        height: 50px;
-        width: 50px;
-        margin-right: 0.5rem;
-        border-radius: 50%;
-      }
-    }
-  }
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
 }
 
 // Contact Page
@@ -341,7 +217,17 @@ img {
     .contact-info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $yellow-color;
       text-align: center;
+
+      & h3 {
+        color: $light-yellow-color;
+      }
+
+      & i {
+        color: $light-yellow-color;
+      }
     }
   }
 
