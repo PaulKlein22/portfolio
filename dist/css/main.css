@@ -229,7 +229,7 @@ img {
 
 #header-home {
   height: 100vh;
-  background: url("../img/showcase.jpeg") no-repeat center center/cover;
+  background: url("../img/showcase_1.jpg") no-repeat center center/cover;
   color: #fff; }
   #header-home .header-content {
     padding-top: 20%;
@@ -242,7 +242,7 @@ img {
 
 #header-inner {
   height: 5.5rem;
-  background: url("../img/showcase.jpeg") no-repeat center 12.1%/cover;
+  background: url("../img/showcase_1.jpg") no-repeat center 12.1%/cover;
   border-bottom: 3px solid #ffeb3b; }
 
 .work-gallery {
