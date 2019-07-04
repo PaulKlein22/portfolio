@@ -272,13 +272,13 @@ img {
       }
     }
 
-    .recaptcha {
-      text-align: center;
-    }
-
-    // .g-recaptcha {
-    //   display: inline-block;
+    // .recaptcha {
+    //   text-align: center;
     // }
+
+    .g-recaptcha {
+      display: inline-block;
+    }
 
     button[type='submit'] {
       width: 50%;
