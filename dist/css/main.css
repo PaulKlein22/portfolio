@@ -358,9 +358,6 @@ img {
 #contact-a .recaptcha {
   text-align: center; }
 
-#contact-a .g-recaptcha {
-  display: inline-block; }
-
 #contact-a button[type='submit'] {
   width: 50%; }
 
