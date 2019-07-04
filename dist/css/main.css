@@ -16,6 +16,9 @@
 .my-4 {
   margin: 4rem 0; }
 
+.m-auto {
+  margin: auto; }
+
 .py-1 {
   padding: 1rem 0; }
 
@@ -166,6 +169,30 @@ input[class^='btn-']:hover {
     font-size: 1.2rem;
     text-transform: uppercase;
     opacity: 0.7; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+textarea {
+  font-family: 'Dosis', sans-serif; }
+
+::-webkit-input-placeholder {
+  font-family: 'Dosis', sans-serif; }
+
+:-moz-placeholder {
+  font-family: 'Dosis', sans-serif; }
+
+::-moz-placeholder {
+  font-family: 'Dosis', sans-serif; }
+
+:-ms-input-placeholder {
+  font-family: 'Dosis', sans-serif; }
 
 * {
   margin: 0;
