@@ -276,13 +276,17 @@ img {
   height: 550px; }
 
 .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  justify-items: center;
   perspective: 500px; }
 
-.card-container:hover .card,
-.card-container.hover .card {
+.card-container .card:hover,
+.card-container .card.hover {
   transform: rotateY(180deg); }
 
-.card-container,
 .front,
 .back {
   width: 238px;
@@ -330,6 +334,8 @@ img {
   backface-visibility: hidden; }
 
 .card-img {
+  height: 180px;
+  width: 238px;
   border-bottom: 2px solid #ffeb3b; }
 
 .tech-stack {

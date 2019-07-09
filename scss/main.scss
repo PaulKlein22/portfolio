@@ -154,15 +154,21 @@ img {
 }
 
 .card-container {
+  display: grid;
+  // grid-template-columns: 238px 238px 238px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  justify-items: center;
   perspective: 500px;
 }
 
-.card-container:hover .card,
-.card-container.hover .card {
+.card-container .card:hover,
+.card-container .card.hover {
   transform: rotateY(180deg);
 }
 
-.card-container,
+// .card-container,
 .front,
 .back {
   width: 238px;
@@ -229,6 +235,8 @@ img {
 }
 
 .card-img {
+  height: 180px;
+  width: 238px;
   border-bottom: 2px solid $main-color;
 }
 
