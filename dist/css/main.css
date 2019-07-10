@@ -279,14 +279,15 @@ img {
   border-bottom: 3px solid #ffeb3b; }
 
 .work-gallery {
-  height: 550px; }
+  height: auto; }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
   grid-template-rows: auto;
   grid-gap: 1rem;
   justify-items: center;
+  padding-bottom: 50px;
   background-color: transparent;
   perspective: 1000px; }
 
@@ -300,8 +301,7 @@ img {
   transform-style: preserve-3d; }
 
 .card-container .card-wrapper:hover .card {
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg); }
+  transform: rotateY(180deg); }
 
 .card-front,
 .card-back {
