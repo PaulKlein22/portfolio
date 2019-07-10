@@ -175,6 +175,7 @@ img {
 
 .card-container .card-wrapper:hover .card {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .card-front,
