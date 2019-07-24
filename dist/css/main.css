@@ -370,7 +370,7 @@ img {
 
 #contact-b .contact-info {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding-bottom: 1rem;
   border-bottom: 2px solid #ffeb3b;
   text-align: center; }
