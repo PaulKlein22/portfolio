@@ -482,6 +482,10 @@ img {
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #header-home .header-content {
+    padding-top: 16.8rem; } }
+
 /* Extra large devices (large laptops and desktops, 1224px and up) */
 @media only screen and (min-width: 1224px) {
   #header-home .header-content {
