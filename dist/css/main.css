@@ -484,17 +484,17 @@ img {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #header-home .header-content {
-    padding-top: 27.4 0.8rem; } }
+    padding-top: 16.8rem; } }
 
 /* Extra large devices (large laptops and desktops, 1224px and up) */
 @media only screen and (min-width: 1224px) {
   #header-home .header-content {
-    padding-top: 27.4 0.8rem; } }
+    padding-top: 16.8rem; } }
 
 /* Extra, extra large devices (widescreen laptops and desktops, 1824px and up) */
 @media only screen and (min-width: 1824px) {
   #header-home .header-content {
-    padding-top: 27.4rem; }
+    padding-top: 33.6rem; }
     #header-home .header-content h1 {
       font-size: 5rem; } }
 
