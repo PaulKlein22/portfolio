@@ -494,7 +494,7 @@ img {
 /* Extra, extra large devices (widescreen laptops and desktops, 1824px and up) */
 @media only screen and (min-width: 1680px) {
   #header-home .header-content {
-    padding-top: 16.8rem; }
+    padding-top: 25.2rem; }
     #header-home .header-content h1 {
       font-size: 5rem; } }
 
